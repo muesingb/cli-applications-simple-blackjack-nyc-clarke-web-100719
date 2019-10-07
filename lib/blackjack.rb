@@ -29,8 +29,8 @@ def initial_round
   display_card_total(initial_sum)
 end
 
-def hit?
-  # code hit? here
+def hit?(current_card_total)
+  prompt_user
 end
 
 def invalid_command
