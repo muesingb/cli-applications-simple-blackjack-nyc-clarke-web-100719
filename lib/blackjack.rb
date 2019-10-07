@@ -2,8 +2,8 @@ def welcome
   puts "Welcome to the Blackjack Table"
 end
 
-def deal_card (last_card_drawn: 0)
-  rand(10) + 1 + last_card_drawn
+def deal_card
+  rand(10) + 1
 end
 
 def display_card_total(card_total)
@@ -24,7 +24,7 @@ end
 
 def initial_round
   first_card = deal_card
-  deal_card(first_card)
+  deal_card
   display_card_total
   return card_total
   deal_card
